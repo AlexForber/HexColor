@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Red+Hat+Mono:wght@400;700&display=swap');
+
+body{
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.container{
+    
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-colors{
+text-align: center;
+}
+
+.hex-colors h1{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: colorchange 5s infinite alternate;
+    -webkit-animation: colorchange 5s infinite alternate;
+}
+
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+
+@keyframes colorchange{
+    0%{
+        color: blueviolet;
+    }
+    20%{
+        color: rgb(27, 31, 63);
+    }
+    40%{
+        color: rgb(212, 183, 51);
+    }
+    60%{
+        color: rgb(21, 133, 17);
+    }
+    80%{
+        color: rgb(153, 28, 28);
+    }
+    100%{
+        color: rgb(3, 132, 155);
+    }
+}
+
+@media (max-width:480px) {
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+}
+
+span{
+    display: inline-block;
+}
